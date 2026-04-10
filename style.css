@@ -26,6 +26,7 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .mySection {
@@ -73,7 +74,8 @@ span {
   flex-grow: 1;
   transition: 1.5s;
 
-  &:hover {
+  &:hover,
+  &.active {
     transition: 0s;
     background-color: var(--primary-color);
   }
