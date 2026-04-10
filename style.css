@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('assets/quicksand.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 *,
 *::after,
@@ -10,7 +19,7 @@
 }
 
 :root {
-  --primary-color: #FF5F1F;
+  --primary-color: #ff5f1f;
 }
 
 body {
@@ -56,7 +65,6 @@ body {
   }
 }
 
-
 span {
   display: block;
   width: calc(6.25vw - 2px);
@@ -64,7 +72,6 @@ span {
   background-color: #000;
   flex-grow: 1;
   transition: 1.5s;
-
 
   &:hover {
     transition: 0s;
@@ -100,42 +107,41 @@ span {
     i {
       position: absolute;
       left: 0;
-      padding: .8rem .6rem;
+      padding: 0.8rem 0.6rem;
       font-style: normal;
       pointer-events: none;
-      transition: .5s;
+      transition: 0.5s;
     }
   }
 
   input {
     width: 100%;
-    padding: .7rem;
+    padding: 0.7rem;
     border-radius: 8px;
     outline: none;
     border: none;
 
-    &:focus~i,
-    &:valid~i {
-      font-size: .7rem;
+    &:focus ~ i,
+    &:valid ~ i {
+      font-size: 0.7rem;
       transform: translateY(-10px);
     }
   }
 
-  input[type=text],
-  input[type=password] {
-    padding: 1.3rem .7rem .5rem;
+  input[type='text'],
+  input[type='password'] {
+    padding: 1.3rem 0.7rem 0.5rem;
   }
 
-
-  input[type=submit] {
+  input[type='submit'] {
     background-color: var(--primary-color);
     color: #222;
     font-weight: 900;
     font-size: 1rem;
-    transition: opacity .3s ease-in-outù;
+    transition: opacity 0.3s ease-in-outù;
 
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
     }
   }
 
@@ -157,13 +163,13 @@ span {
 
 @media (width <=1000px) and (orientation: landscape) {
   .center {
-    transform: translate(-50%, -50%) scale(.75);
+    transform: translate(-50%, -50%) scale(0.75);
     max-width: 300px;
   }
 }
 
 @media (width <=1000px) and (orientation: portrait) {
   .center {
-    transform: translate(-50%, -50%) scale(.85);
+    transform: translate(-50%, -50%) scale(0.85);
   }
 }
