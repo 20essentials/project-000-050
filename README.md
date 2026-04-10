@@ -1,2 +1,7 @@
-![n1](preview/n1.avif)
-![n2](preview/n2.avif)
+[![Foto Preview](preview/project-50.avif)](https://20essentials.github.io/project-000-050)
+
+<div align="center" style="display: flex; justify-content: center;">
+  <a  href="https://github.com/20essentials/project-000-049" target="_blank">&#8592;</a>
+  &nbsp;&nbsp;
+  <a  href="https://github.com/20essentials/project-000-051" target="_blank">&#8594;</a>
+</div>
